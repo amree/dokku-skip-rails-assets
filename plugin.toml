@@ -1,0 +1,3 @@
+[Skip Rails Assets]
+description = "Generate public/assets/manifest-123.json to skip assets precompilation"
+version = "1.0.0"
