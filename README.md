@@ -1,8 +1,8 @@
 # README
 
 This plugin will skip Rails assets precompilation by creating a manifest file
-and it'll also make sure nodejs buildpack won't detect it as a javascript
-application by removing `package.json`
+and it'll also make sure nodejs buildpack won't be downloaded by removing nodejs
+buildpack from the list.
 
 ## Development
 
