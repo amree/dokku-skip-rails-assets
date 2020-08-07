@@ -6,7 +6,7 @@ dokku_log_info1_quiet "[AMREE] Wat wat"
 
 APP="$1"
 IMAGE="dokku/$APP"
-FILE="public/assets/manifest-123.json"
+FILE="public/assets/manifest-random.json"
 
 COMMAND=$(cat <<EOF
 touch /app/$FILE
