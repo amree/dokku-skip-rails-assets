@@ -2,6 +2,8 @@
 
 set -eo pipefail; [[ $DOKKU_TRACE ]] && set -x
 
+dokku_log_info1_quiet "[AMREE] Wat wat"
+
 APP="$1"
 IMAGE="dokku/$APP"
 FILE="public/assets/manifest-123.json"
