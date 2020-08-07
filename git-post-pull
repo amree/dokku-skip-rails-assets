@@ -1,12 +1,8 @@
 #!/usr/bin/env bash
-
 set -eo pipefail; [[ $DOKKU_TRACE ]] && set -x
 # APP="$1"
 # IMAGE="dokku/$APP"
 # FILE="public/assets/manifest-123.json"
-
-echo "-----> Hello world"
-
 # COMMAND=$(cat <<EOF
 # echo "-----> Creating $FILE"
 # touch /app/$FILE
