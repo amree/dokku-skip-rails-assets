@@ -1,9 +1,13 @@
 #!/usr/bin/env bash
-# APP="$1"
-# IMAGE="dokku/$APP"
-# FILE="public/assets/manifest-123.json"
+
+set -eo pipefail; [[ $DOKKU_TRACE ]] && set -x
+
+APP="$1"
+IMAGE="dokku/$APP"
+FILE="public/assets/manifest-123.json"
+
 # COMMAND=$(cat <<EOF
-# echo "-----> Creating $FILE"
+echo "-----> Creating $FILE"
 # touch /app/$FILE
 # ls -lah /app/$FILE
 # sleep 1 # wait so that docker run has not exited before docker attach

@@ -1,3 +1,4 @@
 [plugin]
 description = "Skip rails assets precompilation"
 version = "1.0.0"
+[plugin.config]
