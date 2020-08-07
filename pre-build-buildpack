@@ -10,7 +10,7 @@ IMAGE="dokku/$APP"
 
 COMMAND=$(cat <<EOF
 # ensure nodejs pack won't be run
-rm /app/package.json
+sed -i '/nodejs/d' .buildpacks
 # ensure assets:precompile won't run
 touch /app/public/assets/manifest-random.json
 # wait so that docker run has not exited before docker attach
